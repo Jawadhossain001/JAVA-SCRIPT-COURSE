@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON, JSON Structure, parse, stringify, JSON properties[module-25-video-4]</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>Javascript Object Notation</h2>
+    <script>
+        const user = {
+            id: 245, 
+            name: "Masud", 
+            lover: {
+                name: "Jamila",
+                favFood: "pizza"
+            },
+            friendAges: [12, 45, 56],
+            friends: ["Kamal","Jamal","Samal"]
+            };
+        //         {"id":245, "name":"Masud"}      //<- JSON formate convert. this is shown to webpage console..
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+        const userFromJSON = JSON.parse(userJSON);   //<- converting to javascript object ..
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>

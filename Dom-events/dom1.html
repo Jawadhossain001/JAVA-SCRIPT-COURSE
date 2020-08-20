@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to use getElementsByClassName and change innerHTML</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin:5px;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- [how to use getElementsByClassName and change innerHTML]:  -->
+
+
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article class="special">
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam non deserunt sapiente voluptatem vero vel excepturi magni beatae nisi, quis iure architecto eligendi hic suscipit sed, perspiciatis, quibusdam accusantium eaque!</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Natus reprehenderit sit iusto aperiam tenetur nulla saepe, consequuntur velit veniam maxime fugit. Modi, obcaecati aut eaque quam doloremque pariatur. Illum impedit reprehenderit provident eaque sapiente nobis dolor blanditiis asperiores.</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Voluptates ut dolor pariatur, mollitia praesentium beatae accusantium magni quae, molestiae assumenda iure labore iste! Voluptatem, sint temporibus amet libero nobis eaque numquam expedita doloribus commodi suscipit. Perspiciatis, vero nihil.</p>
+            </article>
+        </section>
+    </main>
+    
+    
+    <script>
+        var authors = document.getElementsByClassName('author');
+        for(var i = 0; i < authors.length; i++){
+            var element = authors[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 'Lekhok-' + (i + 1);
+            element.style.backgroundColor = 'lightblue';
+            element.style.margin = '10px';
+        }
+    </script>
+</body>
+</html>

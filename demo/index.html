@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,700">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+           <div id="result">
+               <!-- <div id="history">
+                    <p id="history-value"></p>
+               </div> -->
+               <div id="output">
+                   <p id="output-value" name="output"></p>
+               </div>
+               <div id="keyboard">
+                <input class="operator" value=" 1 " onclick="calculator.output.value += 'clear' ">
+                <input class="operator" value=" 1 " onclick="calculator.output.value += 'backspace' ">
+                <input class="operator" value=" 1 " onclick="calculator.output.value +=%">
+                <input class="operator" value=" 1 " onclick="calculator.output.value +=/">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=7">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=8">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=9">
+                <input class="operator" value=" 1 " onclick="calculator.output.value += * ">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=4">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=5">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=6">
+                <input class="operator" value=" 1 " onclick="calculator.output.value += '-' ">
+                <input class="number" value=" 1 " onclick="calculator.output.value += '1' ">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=2">
+                <input class="number" value=" 1 " onclick="calculator.output.value +=3">
+                <input class="operator" value=" 1 " onclick="calculator.output.value +=+">
+                <input class="empty" id="empty">
+                <input class="number" value=" 1 " onclick="calculator.output.value += '0' ">
+                <input class="empty" id="empty">
+                <input class="operator" value=" 1 " onclick="calculator.output.value += =">
+               </div>
+           </div> 
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+</html>

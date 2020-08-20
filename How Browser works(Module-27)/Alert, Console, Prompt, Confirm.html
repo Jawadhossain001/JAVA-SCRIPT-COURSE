@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Alert, Console, Prompt, Confirm</title>
+</head>
+<body>
+    <h1>Message</h1>
+    <button onclick="consoleIt()">console</button>
+    <button onclick="alertIt()">alert</button>
+    <button onclick="promptIt()">prompt</button>
+    <button onclick="confirmIt()">confirm</button>
+
+    <script>
+        function consoleIt() {
+            console.log("console message here")
+        }
+        function alertIt() {
+            alert("alert message")
+        }
+        function promptIt() {
+            // prompt("prompt message");
+           var message = prompt("prompt message", "enter something");
+            console.log("message");
+        }
+        function confirmIt() {
+           var userInput = confirm("You are sure?");
+           console.log(userInput);
+        }
+    </script>
+
+
+
+
+
+
+<!-- get more information-:    https://www.youtube.com/watch?v=z99dEJ2Cv1E  -->
+</body>
+</html>
+
